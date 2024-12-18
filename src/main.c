@@ -115,6 +115,8 @@ int main(int argc, char *argv[]) {
 			case KEY_RIGHT:
 				if (cursor_x < width - 1) cursor_x++;
 				break;
+			case 10: //enter
+				revealCell(board);
 		}
 	}
 	endwin();
